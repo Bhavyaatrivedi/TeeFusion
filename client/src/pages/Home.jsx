@@ -24,6 +24,13 @@ const Home = () => {
                 className='w-8 h-8 object-contain'
                 />
             </motion.header>
+
+            <motion.div className='home-content'{...headTextAnimation}>
+                <h1 className='head-text'>
+                    Let's <br className='xl:block hidden'/>Do It.
+                </h1>
+            </motion.div>
+        
         </motion.section>
     )}
     </AnimatePresence>
