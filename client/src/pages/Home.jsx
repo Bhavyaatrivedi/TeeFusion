@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useSnapshot } from 'valtio';
 
 import state from '../store';
-// import { CustomButton } from '../components';
+ import { CustomButton } from '../components';
 import {
   headContainerAnimation,
   headContentAnimation,
@@ -40,6 +40,12 @@ const Home = () => {
                 <strong>Unleash your imagination</strong>{" "}
                 and define your own style.
               </p>
+              <CustomButton
+              type="filled"
+              title="Custom It"
+              handleClick = {() => state.intro = false}
+              custtomStyles = "w-fit px-4 py-2.5 font-bold text-sm"
+              ></CustomButton>
             </motion.div>
         
         </motion.section>
